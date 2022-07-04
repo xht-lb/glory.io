@@ -1,0 +1,19 @@
+<html><head><title>Hello World</title></head> 
+ 
+<body> 
+<h1>Hello World</h1><br> 
+<h1><p id="clock"></p ></h1> 
+<script type="text/javascript"> console.log("script log"); 
+setInterval(function(){ console.log(new Date().toLocaleTimeString()); 
+document.getElementById('clock').innerHTML=new Date().toLocaleTimeString(); },10000); 
+
+document.writeln("<h2>Navigator.userAgent:</h2> " + navigator.userAgent + "<br />"); document.writeln("<h2>Navigator.appName: </h2>" + navigator.appName + "<br />"); document.writeln("<h2>Navigator.appCodeName: </h2>" + navigator.appCodeName + "<br />"); document.writeln("<h2>Navigator.appVersion: </h2>" + navigator.appVersion + "<br />"); function onBtn() {alert('JS alert test'); console.log("JS alert test");}</script><h2>Navigator.userAgent:</h2> Mozilla/5.0 (iPhone; CPU iPhone OS 15_5 like Mac OS X) AppleWebKit/605.1.15 (KHTML, like Gecko) Mobile/15E148<br>
+<h2>Navigator.appName: </h2>Netscape<br>
+<h2>Navigator.appCodeName: </h2>Mozilla<br>
+<h2>Navigator.appVersion: </h2>5.0 (iPhone; CPU iPhone OS 15_5 like Mac OS X) AppleWebKit/605.1.15 (KHTML, like Gecko) Mobile/15E148<br>
+ 
+
+<button id="btn" name="AlertBtn" onclick="onBtn()">Click to show Alert Msg</button> 
+
+ 
+</body></html>
